@@ -5,7 +5,7 @@ export const [compBProp, setCompBProp] = createSignal(false);
 
 const CompB = () => {
   return <div
-    style={{ width: "100px", height: "100px", "background-color": "skyblue" }}
+    style={{ width: "100px", height: "100px", "background-color": "deepskyblue" }}
     onclick={() => {
       if (appProp()) {
         console.log("hello");

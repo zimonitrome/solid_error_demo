@@ -4,5 +4,5 @@ html, body, #app, #mobileContainer {
   font-family: "Ubuntu";
   display: flex;
   flex-direction: column;
-  background-color: lightblue;
+  background-color: lightgray;
 }
