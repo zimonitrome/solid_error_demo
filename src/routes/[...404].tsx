@@ -1,5 +1,3 @@
-import { Error } from "~/components/Error";
-
 export default function NotFound() {
-  return <Error />;
+  return <p>Error</p>;
 }

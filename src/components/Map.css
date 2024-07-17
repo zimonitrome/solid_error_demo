@@ -1,9 +1,0 @@
-.map {
-  width: 100%;
-  height: 100%;
-  background-color: #010b19;
-}
-
-.fileDrop {
-  filter: grayscale(100%) contrast(50%);
-}

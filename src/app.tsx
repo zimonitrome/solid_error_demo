@@ -5,8 +5,9 @@ import { A, Router } from "@solidjs/router";
 import { FileRoutes } from "@solidjs/start/router";
 import "./app.css";
 import { SessionProvider } from "@solid-mediakit/auth/client";
+import CompB from "./components/CompB";
 
-export const [isMobile, setIsMobile] = createSignal(true);
+export const [appProp, setAppProp] = createSignal(true);
 
 export default function App() {
   return (
@@ -23,9 +24,10 @@ export default function App() {
 
           <Suspense>
             <SessionProvider>
-              <div id="mobileContainer" classList={{ mobile: isMobile() }}>
+              <div id="mobileContainer" classList={{ mobile: appProp() }}>
                 <A href="/">Home</A>
-                <A href="/stereotyple">Page 2</A>
+                <A href="/otherpage">Page 2</A>
+                <CompB />
                 {props.children}
               </div>
             </SessionProvider>
