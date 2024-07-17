@@ -1,11 +1,3 @@
-import "@thisbeyond/solid-select/style.css";
-
-export interface GameCountry {
-  id: string;
-  name: string;
-  selected: boolean;
-}
-
 const Otherpage = () => {
   return <div style={{ "display": "flex", "align-items": "center", "flex-direction": "column" }}>
       <h1>Page2</h1>
